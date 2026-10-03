@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Data</title>
+</head>
+<body>
+
+<h2>Edit Record</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Name :
+    <input type="text" name="name" value="{{data.name}}">
+    <br><br>
+
+    Email :
+    <input type="email" name="email" value="{{data.email}}">
+    <br><br>
+
+    Contact :
+    <input type="text" name="contact" value="{{data.contact}}">
+    <br><br>
+
+    Password :
+    <input type="text" name="password" value="{{data.password}}">
+    <br><br>
+
+    Gender :
+    <input type="text" name="gender" value="{{data.gender}}">
+    <br><br>
+
+    State :
+    <input type="text" name="state" value="{{data.state}}">
+    <br><br>
+
+    Country :
+    <input type="text" name="country" value="{{data.country}}">
+    <br><br>
+
+    <input type="submit" value="Update">
+
+</form>
+
+</body>
+</html>
